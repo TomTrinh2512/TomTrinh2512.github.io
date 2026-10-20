@@ -3,82 +3,206 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vinamilk Valuation | Tom Trinh</title>
-  <meta name="description" content="DCF and comparable-company valuation of Vinamilk (HOSE: VNM).">
+  <title data-en="Vinamilk Valuation | Tom Trinh" data-vi="Định giá Vinamilk | Tom Trinh">Vinamilk Valuation | Tom Trinh</title>
+  <meta name="description" content="DCF valuation of Vinamilk (HOSE: VNM): base case VND 64,963 per share, 12.4% above the market price.">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <header class="site">
     <div class="wrap">
       <a class="brand" href="index.html">Tom Trinh</a>
-      <nav>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
+      <div class="right">
+        <nav>
+          <a href="index.html#projects"><span class="en">Projects</span><span class="vi">Dự án</span></a>
+          <a href="index.html#about"><span class="en">About</span><span class="vi">Giới thiệu</span></a>
+          <a href="index.html#contact"><span class="en">Contact</span><span class="vi">Liên hệ</span></a>
+        </nav>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="vi">VI</button>
+        </div>
+      </div>
     </div>
   </header>
 
   <main class="wrap">
-    <h1>Vinamilk (HOSE: VNM): DCF &amp; Comparable Company Valuation</h1>
-    <p class="lead">Is Vinamilk fairly priced? A full valuation using Vietnamese Accounting Standards (VAS) data, with historicals for 2021A–2025A and forecasts for 2026E–2030E.</p>
+    <h1>
+      <span class="en">Vinamilk (HOSE: VNM): DCF Valuation</span>
+      <span class="vi">Vinamilk (HOSE: VNM): Định giá DCF</span>
+    </h1>
+    <p class="lead en">Is Vinamilk fairly priced? A five-year unlevered free cash flow DCF in Excel, using Vietnamese Accounting Standards (VAS) data, a 30 June 2026 balance sheet and market data at the 16 October 2026 close. Personal project, October 2026.</p>
+    <p class="lead vi">Vinamilk có đang được định giá hợp lý không? Mô hình DCF dòng tiền tự do không vay nợ 5 năm trên Excel, sử dụng dữ liệu theo Chuẩn mực Kế toán Việt Nam (VAS), bảng cân đối tại 30/06/2026 và dữ liệu thị trường ngày 16/10/2026. Dự án cá nhân, tháng 10/2026.</p>
     <p>
-      <a class="btn" href="files/vinamilk-report.pdf">Download report (PDF)</a>
-      <a class="btn" href="files/vinamilk-model.xlsx">Download model (Excel)</a>
+      <a class="btn en" href="files/vinamilk-1-page-report-en.pdf">1-Page Report (PDF)</a>
+      <a class="btn en" href="files/vinamilk-dcf-model-en.pdf">DCF Model (PDF)</a>
+      <a class="btn vi" href="files/vinamilk-1-page-report-vi.pdf">Báo cáo 1 trang (PDF)</a>
+      <a class="btn vi" href="files/vinamilk-dcf-model-vi.pdf">Mô hình DCF (PDF)</a>
     </p>
 
-    <h2>Headline result</h2>
-    <p class="todo">Replace the placeholders below with your final numbers.</p>
-    <div class="stats">
-      <div class="stat"><div class="label">Base-case value per share</div><div class="value">[ VND ___ ]</div></div>
-      <div class="stat"><div class="label">Current share price</div><div class="value">[ VND ___ ]</div></div>
-      <div class="stat"><div class="label">Implied upside / downside</div><div class="value">[ __% ]</div></div>
-      <div class="stat"><div class="label">Recommendation</div><div class="value">[ Buy / Hold / Sell ]</div></div>
+    <!-- ========== HEADLINE ========== -->
+    <h2><span class="en">Headline result</span><span class="vi">Kết quả chính</span></h2>
+    <div class="stats en">
+      <div class="stat"><div class="label">Value per share (base case)</div><div class="value">VND 64,963</div></div>
+      <div class="stat"><div class="label">Market price, 16 Oct 2026</div><div class="value">VND 57,800</div></div>
+      <div class="stat"><div class="label">Upside to market</div><div class="value">+12.4%</div></div>
+      <div class="stat"><div class="label">WACC / terminal growth</div><div class="value">9.55% / 3.0%</div></div>
     </div>
-    <p>One or two sentences on the thesis: <span class="todo">e.g. "Vinamilk trades at a discount/premium to my base-case DCF value because..."</span></p>
+    <div class="stats vi">
+      <div class="stat"><div class="label">Giá trị mỗi cổ phiếu (kịch bản cơ sở)</div><div class="value">VND 64.963</div></div>
+      <div class="stat"><div class="label">Giá thị trường, 16/10/2026</div><div class="value">VND 57.800</div></div>
+      <div class="stat"><div class="label">Tiềm năng tăng so với giá thị trường</div><div class="value">+12,4%</div></div>
+      <div class="stat"><div class="label">WACC / tăng trưởng dài hạn</div><div class="value">9,55% / 3,0%</div></div>
+    </div>
+    <p class="en"><strong>Conclusion.</strong> In the base case, VNM is worth about VND 64,963 per share, 12.4% above the market price. Across the sensitivity grid (WACC 8.55–10.55%, terminal growth 2.0–4.0%), value ranges from VND 52,876 to 87,563. The market price sits near the bottom of that range, which points to moderate undervaluation. The model implies a 2026E EV/EBITDA of 8.0x, against about 7.0x at the current price. About 75% of enterprise value comes from the terminal value, so the result depends most on long-run margin, terminal growth and WACC.</p>
+    <p class="vi"><strong>Kết luận.</strong> Theo kịch bản cơ sở, VNM có giá trị khoảng 64.963 VND/cổ phiếu, cao hơn giá thị trường 12,4%. Trên lưới độ nhạy (WACC 8,55–10,55%, tăng trưởng dài hạn 2,0–4,0%), giá trị dao động từ 52.876 đến 87.563 VND; giá thị trường nằm gần cận dưới của khoảng này, cho thấy cổ phiếu bị định giá thấp ở mức vừa phải. Mô hình ngụ ý EV/EBITDA 2026E là 8,0x, so với khoảng 7,0x theo giá hiện tại. Khoảng 75% giá trị doanh nghiệp đến từ giá trị cuối kỳ, nên kết quả phụ thuộc nhiều nhất vào biên lợi nhuận dài hạn, tốc độ tăng trưởng và WACC.</p>
 
-    <h2>Approach</h2>
-    <ul>
-      <li><strong>Company and industry analysis:</strong> business model, market position, competitive landscape.</li>
-      <li><strong>Historical model:</strong> 2021A–2025A income statement, balance sheet and cash flow, plus operating metrics.</li>
-      <li><strong>Forecast:</strong> 2026E–2030E integrated three-statement model.</li>
-      <li><strong>Valuation:</strong> FCFF-based DCF with a WACC build, cross-checked against trading comparables and a dividend discount model.</li>
-      <li><strong>Scenarios:</strong> bull, base and bear cases.</li>
+    <!-- ========== FORECAST ========== -->
+    <h2><span class="en">Forecast summary</span><span class="vi">Tóm tắt dự phóng</span></h2>
+
+    <div class="en">
+      <p class="note">VND billions. 2026E free cash flow covers H2 only (see the note below the table).</p>
+      <div class="scroll">
+      <table class="num">
+        <tr><th class="left"></th><th>2025A</th><th>2026E</th><th>2027E</th><th>2028E</th><th>2029E</th><th>2030E</th></tr>
+        <tr><td class="left">Revenue</td><td>63,646</td><td>70,647</td><td>73,826</td><td>76,779</td><td>79,466</td><td>81,850</td></tr>
+        <tr><td class="left">Growth</td><td>3.0%</td><td>11.0%</td><td>4.5%</td><td>4.0%</td><td>3.5%</td><td>3.0%</td></tr>
+        <tr><td class="left">EBIT</td><td>10,664</td><td>12,575</td><td>12,920</td><td>13,283</td><td>13,668</td><td>13,915</td></tr>
+        <tr><td class="left">EBIT margin</td><td>16.8%</td><td>17.8%</td><td>17.5%</td><td>17.3%</td><td>17.2%</td><td>17.0%</td></tr>
+        <tr><td class="left">D&amp;A</td><td>2,363</td><td>2,473</td><td>2,584</td><td>2,687</td><td>2,781</td><td>2,865</td></tr>
+        <tr><td class="left">CapEx</td><td>1,762</td><td>2,119</td><td>2,362</td><td>2,534</td><td>2,702</td><td>2,865</td></tr>
+        <tr><td class="left">Change in working capital (incl. other payments)</td><td>(2,713)</td><td>(2,119)</td><td>(2,215)</td><td>(2,303)</td><td>(2,384)</td><td>(2,456)</td></tr>
+        <tr><td class="left"><strong>Unlevered free cash flow</strong></td><td>6,315</td><td>4,643*</td><td>8,342</td><td>8,476</td><td>8,630</td><td>8,676</td></tr>
+        <tr><td class="left">Present value</td><td>–</td><td>4,436</td><td>7,275</td><td>6,747</td><td>6,271</td><td>5,754</td></tr>
+      </table>
+      </div>
+      <p class="note">* 2026E covers H2 only: full-year free cash flow of 8,294 less the H1 actual of 3,651, which is already in the 30 June cash balance.</p>
+    </div>
+
+    <div class="vi">
+      <p class="note">Tỷ VND. Dòng tiền tự do 2026E chỉ tính H2 (xem chú thích dưới bảng).</p>
+      <div class="scroll">
+      <table class="num">
+        <tr><th class="left"></th><th>2025A</th><th>2026E</th><th>2027E</th><th>2028E</th><th>2029E</th><th>2030E</th></tr>
+        <tr><td class="left">Doanh thu</td><td>63.646</td><td>70.647</td><td>73.826</td><td>76.779</td><td>79.466</td><td>81.850</td></tr>
+        <tr><td class="left">Tăng trưởng</td><td>3,0%</td><td>11,0%</td><td>4,5%</td><td>4,0%</td><td>3,5%</td><td>3,0%</td></tr>
+        <tr><td class="left">EBIT</td><td>10.664</td><td>12.575</td><td>12.920</td><td>13.283</td><td>13.668</td><td>13.915</td></tr>
+        <tr><td class="left">Biên EBIT</td><td>16,8%</td><td>17,8%</td><td>17,5%</td><td>17,3%</td><td>17,2%</td><td>17,0%</td></tr>
+        <tr><td class="left">Khấu hao (D&amp;A)</td><td>2.363</td><td>2.473</td><td>2.584</td><td>2.687</td><td>2.781</td><td>2.865</td></tr>
+        <tr><td class="left">Chi đầu tư (CapEx)</td><td>1.762</td><td>2.119</td><td>2.362</td><td>2.534</td><td>2.702</td><td>2.865</td></tr>
+        <tr><td class="left">Thay đổi vốn lưu động (gồm chi hoạt động khác)</td><td>(2.713)</td><td>(2.119)</td><td>(2.215)</td><td>(2.303)</td><td>(2.384)</td><td>(2.456)</td></tr>
+        <tr><td class="left"><strong>Dòng tiền tự do</strong></td><td>6.315</td><td>4.643*</td><td>8.342</td><td>8.476</td><td>8.630</td><td>8.676</td></tr>
+        <tr><td class="left">Hiện giá (PV)</td><td>–</td><td>4.436</td><td>7.275</td><td>6.747</td><td>6.271</td><td>5.754</td></tr>
+      </table>
+      </div>
+      <p class="note">* 2026E chỉ tính H2: cả năm 8.294 trừ thực tế H1 3.651 (đã nằm trong số dư tiền tại 30/06).</p>
+    </div>
+
+    <!-- ========== EV BRIDGE ========== -->
+    <h2><span class="en">From enterprise value to value per share</span><span class="vi">Từ giá trị doanh nghiệp đến giá trị mỗi cổ phiếu</span></h2>
+
+    <div class="en">
+      <table class="num">
+        <tr><th class="left">VND billions</th><th></th></tr>
+        <tr><td class="left">PV of free cash flow</td><td>30,483</td></tr>
+        <tr><td class="left">PV of terminal value</td><td>90,427</td></tr>
+        <tr><td class="left"><strong>Enterprise value (EV)</strong></td><td><strong>120,910</strong></td></tr>
+        <tr><td class="left">+ Cash, deposits and associates</td><td>27,114</td></tr>
+        <tr><td class="left">− Debt and non-controlling interests</td><td>(12,254)</td></tr>
+        <tr><td class="left"><strong>Equity value</strong></td><td><strong>135,770</strong></td></tr>
+        <tr><td class="left">Shares outstanding (billions)</td><td>2.090</td></tr>
+        <tr><td class="left"><strong>Value per share (VND)</strong></td><td><strong>64,963</strong></td></tr>
+      </table>
+    </div>
+
+    <div class="vi">
+      <table class="num">
+        <tr><th class="left">Tỷ VND</th><th></th></tr>
+        <tr><td class="left">Hiện giá dòng tiền tự do</td><td>30.483</td></tr>
+        <tr><td class="left">Hiện giá giá trị cuối kỳ</td><td>90.427</td></tr>
+        <tr><td class="left"><strong>Giá trị doanh nghiệp (EV)</strong></td><td><strong>120.910</strong></td></tr>
+        <tr><td class="left">+ Tiền, tiền gửi và công ty liên kết</td><td>27.114</td></tr>
+        <tr><td class="left">− Nợ vay và lợi ích cổ đông không kiểm soát</td><td>(12.254)</td></tr>
+        <tr><td class="left"><strong>Giá trị vốn chủ sở hữu</strong></td><td><strong>135.770</strong></td></tr>
+        <tr><td class="left">Số cổ phiếu (tỷ)</td><td>2,090</td></tr>
+        <tr><td class="left"><strong>Giá trị mỗi cổ phiếu (VND)</strong></td><td><strong>64.963</strong></td></tr>
+      </table>
+    </div>
+
+    <!-- ========== SENSITIVITY ========== -->
+    <h2><span class="en">Sensitivity: value per share (VND)</span><span class="vi">Độ nhạy: giá trị mỗi cổ phiếu (VND)</span></h2>
+
+    <div class="en">
+      <div class="scroll">
+      <table class="num">
+        <tr><th class="left">WACC / g</th><th>2.0%</th><th>2.5%</th><th>3.0%</th><th>3.5%</th><th>4.0%</th></tr>
+        <tr><td class="left">8.55%</td><td class="g">66,695</td><td class="g">70,619</td><td class="g">75,250</td><td class="g">80,798</td><td class="g">87,563</td></tr>
+        <tr><td class="left">9.05%</td><td class="g">62,506</td><td class="g">65,820</td><td class="g">69,682</td><td class="g">74,239</td><td class="g">79,698</td></tr>
+        <tr><td class="left">9.55%</td><td class="g">58,871</td><td class="g">61,701</td><td class="g base">64,963</td><td class="g">68,764</td><td class="g">73,248</td></tr>
+        <tr><td class="left">10.05%</td><td class="r">55,688</td><td class="g">58,127</td><td class="g">60,913</td><td class="g">64,123</td><td class="g">67,863</td></tr>
+        <tr><td class="left">10.55%</td><td class="r">52,876</td><td class="r">54,997</td><td class="r">57,398</td><td class="g">60,139</td><td class="g">63,299</td></tr>
+      </table>
+      </div>
+      <p class="note">Green = at or above the market price of VND 57,800; red = below. Base case boxed.</p>
+    </div>
+
+    <div class="vi">
+      <div class="scroll">
+      <table class="num">
+        <tr><th class="left">WACC / g</th><th>2,0%</th><th>2,5%</th><th>3,0%</th><th>3,5%</th><th>4,0%</th></tr>
+        <tr><td class="left">8,55%</td><td class="g">66.695</td><td class="g">70.619</td><td class="g">75.250</td><td class="g">80.798</td><td class="g">87.563</td></tr>
+        <tr><td class="left">9,05%</td><td class="g">62.506</td><td class="g">65.820</td><td class="g">69.682</td><td class="g">74.239</td><td class="g">79.698</td></tr>
+        <tr><td class="left">9,55%</td><td class="g">58.871</td><td class="g">61.701</td><td class="g base">64.963</td><td class="g">68.764</td><td class="g">73.248</td></tr>
+        <tr><td class="left">10,05%</td><td class="r">55.688</td><td class="g">58.127</td><td class="g">60.913</td><td class="g">64.123</td><td class="g">67.863</td></tr>
+        <tr><td class="left">10,55%</td><td class="r">52.876</td><td class="r">54.997</td><td class="r">57.398</td><td class="g">60.139</td><td class="g">63.299</td></tr>
+      </table>
+      </div>
+      <p class="note">Xanh = bằng hoặc cao hơn giá thị trường 57.800 VND; đỏ = thấp hơn. Kịch bản cơ sở được đóng khung.</p>
+    </div>
+
+    <!-- ========== ASSUMPTIONS ========== -->
+    <h2><span class="en">Key assumptions</span><span class="vi">Giả định chính</span></h2>
+
+    <ul class="en">
+      <li><strong>Revenue.</strong> Growth fades from 11.0% in 2026E to 3.0% in 2030E. H1 2026 revenue grew 17.8%, while management's full-year target is only +4.3% (VND 66,450bn). The model's VND 70,647bn implies roughly 5% growth in H2.</li>
+      <li><strong>Margins.</strong> EBIT margin eases from 17.8% to 17.0% by 2030E (FY2025: 16.8%; H1 2026: 18.0%). The 2026E margin is above VNDirect's 16.6% forecast (Mar 2026). Tax is 20% of EBIT.</li>
+      <li><strong>CapEx and working capital.</strong> CapEx steps up from 3.0% to 3.5% of sales, matching D&amp;A by 2030E. The change in working capital, including other operating payments, is held at −3.0% of sales each year (the five-year average), close to 100% of incremental revenue in the terminal year. This is a conservative assumption.</li>
+      <li><strong>WACC 9.55%.</strong> Cost of equity of 10.03% (10-year government bond yield 4.58% + adjusted beta 0.67 × risk premium 8.13%), pre-tax cost of debt of 3.5%, and a 6.5% debt weight.</li>
+      <li><strong>Half-year stub.</strong> The valuation date is 30 June 2026, so actual H1 2026 free cash flow (VND 3,651bn) is excluded from 2026E. It is already in the 30 June cash balance.</li>
     </ul>
-    <p>All figures use VAS data throughout, so the historicals and forecasts are on one consistent basis.</p>
+    <ul class="vi">
+      <li><strong>Doanh thu.</strong> Tăng trưởng giảm dần từ 11,0% (2026E) xuống 3,0% (2030E). Doanh thu H1 2026 tăng 17,8%, trong khi mục tiêu cả năm của ban lãnh đạo chỉ +4,3% (66.450 tỷ VND); mức 70.647 tỷ trong mô hình hàm ý H2 tăng khoảng 5%.</li>
+      <li><strong>Biên lợi nhuận.</strong> Biên EBIT giảm từ 17,8% xuống 17,0% vào 2030E (FY2025: 16,8%; H1 2026: 18,0%). Biên 2026E cao hơn mức dự báo 16,6% của VNDirect (3/2026). Thuế 20% trên EBIT.</li>
+      <li><strong>Chi đầu tư và vốn lưu động.</strong> CapEx tăng dần từ 3,0% lên 3,5% doanh thu, bằng khấu hao vào 2030E. Thay đổi vốn lưu động, gồm cả các khoản chi hoạt động khác, giữ ở −3,0% doanh thu mỗi năm (trung bình 5 năm), xấp xỉ 100% phần doanh thu tăng thêm ở năm cuối; đây là giả định thận trọng.</li>
+      <li><strong>WACC 9,55%.</strong> Chi phí vốn chủ sở hữu 10,03% (lợi suất trái phiếu chính phủ 10 năm 4,58% + beta điều chỉnh 0,67 × phần bù rủi ro 8,13%); chi phí nợ trước thuế 3,5%; tỷ trọng nợ 6,5%.</li>
+      <li><strong>Kỳ lẻ nửa năm.</strong> Ngày định giá là 30/06/2026 nên dòng tiền tự do thực tế của H1 2026 (3.651 tỷ VND) được loại khỏi 2026E, vì đã nằm trong số dư tiền tại 30/06.</li>
+    </ul>
 
-    <h2>Key assumptions</h2>
-    <table>
-      <tr><th>Assumption</th><th>Value</th><th>Rationale</th></tr>
-      <tr><td>WACC</td><td class="todo">__%</td><td class="todo">Risk-free, beta, ERP, cost of debt</td></tr>
-      <tr><td>Terminal growth</td><td class="todo">__%</td><td class="todo">Why this rate</td></tr>
-      <tr><td>Revenue CAGR 2025–2030</td><td class="todo">__%</td><td class="todo">Drivers</td></tr>
-      <tr><td>Terminal EBIT margin</td><td class="todo">__%</td><td class="todo">Drivers</td></tr>
-    </table>
+    <!-- ========== RISKS ========== -->
+    <h2><span class="en">Risks and judgement calls</span><span class="vi">Rủi ro và các nhận định chủ quan</span></h2>
 
-    <h2>Sensitivity: WACC × terminal growth</h2>
-    <p class="todo">Paste your sensitivity table here (value per share), or add a screenshot with &lt;img src="files/sensitivity.png" alt="Sensitivity table"&gt;.</p>
+    <ul class="en">
+      <li><strong>Cost of equity is a judgement call.</strong> Using the local-currency bond yield plus the full country risk premium partly double-counts sovereign risk. A treatment consistent with Damodaran's method gives a WACC near 7% and a much higher value.</li>
+      <li><strong>Beta is uncertain.</strong> Raw beta is 0.50 (another source shows 0.34). A beta of 0.50 would give a WACC of about 8.3%; a beta of 0.80 would push it to about 10.5%.</li>
+      <li><strong>Terminal value is about 75% of EV,</strong> so a lower long-run margin would cut the upside. The forecasts are my own estimates, not company guidance, and 2026E revenue and margin both sit above management's target and the VNDirect forecast.</li>
+      <li><strong>Simplifications.</strong> Non-controlling interests are at book value; VND 21,968bn of bank deposits is treated as fully liquid; the share count comes from one market-data site, and treasury shares were not checked against the filing.</li>
+    </ul>
+    <ul class="vi">
+      <li><strong>Chi phí vốn chủ sở hữu là một nhận định chủ quan.</strong> Dùng lợi suất trái phiếu nội tệ cộng toàn bộ phần bù rủi ro quốc gia là tính trùng một phần rủi ro chủ quyền. Cách xử lý nhất quán với phương pháp của Damodaran cho WACC gần 7% và giá trị cao hơn nhiều.</li>
+      <li><strong>Beta chưa chắc chắn.</strong> Beta thô là 0,50 (một nguồn khác cho 0,34). Beta 0,50 cho WACC khoảng 8,3%; beta 0,80 đẩy WACC lên khoảng 10,5%.</li>
+      <li><strong>Giá trị cuối kỳ chiếm khoảng 75% EV,</strong> nên biên lợi nhuận dài hạn thấp hơn sẽ làm giảm tiềm năng tăng. Dự phóng là ước tính của tôi, không phải định hướng của công ty; doanh thu và biên 2026E đều cao hơn mục tiêu của ban lãnh đạo và dự báo của VNDirect.</li>
+      <li><strong>Đơn giản hóa.</strong> Lợi ích cổ đông không kiểm soát tính theo giá trị sổ sách; tiền gửi ngân hàng (21.968 tỷ VND) coi là thanh khoản hoàn toàn; số cổ phiếu lấy từ một trang dữ liệu thị trường, chưa đối chiếu cổ phiếu quỹ với báo cáo.</li>
+    </ul>
 
-    <h2>Scenarios</h2>
-    <table>
-      <tr><th></th><th>Bear</th><th>Base</th><th>Bull</th></tr>
-      <tr><td>Value per share</td><td class="todo">___</td><td class="todo">___</td><td class="todo">___</td></tr>
-      <tr><td>Key difference</td><td class="todo">___</td><td class="todo">___</td><td class="todo">___</td></tr>
-    </table>
+    <!-- ========== SOURCES ========== -->
+    <h2><span class="en">Sources</span><span class="vi">Nguồn</span></h2>
+    <p class="note en">Vinamilk audited financial statements FY2021–25 and Q2/H1 2026 interim financial statements (KPMG-reviewed); Vietstock (price, share count); Trading Economics (bond yield); Damodaran, Jan 2026 (country risk premium); VNDirect (Mar 2026) and the company's 2026 targets (cross-checks). The full source list and all assumptions are documented in the underlying Excel model. Educational project; not investment advice.</p>
+    <p class="note vi">Báo cáo tài chính kiểm toán FY2021–25 và báo cáo tài chính giữa niên độ Q2/H1 2026 (đã được KPMG soát xét) của Vinamilk; Vietstock (giá, số cổ phiếu); Trading Economics (lợi suất trái phiếu); Damodaran, 1/2026 (phần bù rủi ro quốc gia); VNDirect (3/2026) và mục tiêu 2026 của công ty (đối chiếu). Danh sách đầy đủ và toàn bộ giả định được ghi trong file mô hình Excel gốc. Dự án học tập; không phải khuyến nghị đầu tư.</p>
 
-    <h2>Trading comparables</h2>
-    <p class="todo">Short summary of the peer set and the multiples you used (EV/EBITDA, P/E), and what they imply.</p>
-
-    <h2>Investment thesis and risks</h2>
-    <h3>Why the numbers look the way they do</h3>
-    <p class="todo">Two or three bullets on the main drivers.</p>
-    <h3>Key risks</h3>
-    <p class="todo">Two or three bullets, such as input costs, competition, regulation, and forecast sensitivity.</p>
-
-    <h2>What I'd do differently</h2>
-    <p class="todo">One or two honest sentences. Reviewers like this section.</p>
-
-    <p style="margin-top:32px"><a href="index.html">← Back to all projects</a></p>
+    <p style="margin-top:32px">
+      <a class="en" href="index.html">← Back to all projects</a>
+      <a class="vi" href="index.html">← Quay lại tất cả dự án</a>
+    </p>
   </main>
 
   <footer>
