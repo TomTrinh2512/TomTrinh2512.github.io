@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title data-en="Vinamilk Valuation | Tom Trinh" data-vi="Định giá Vinamilk | Tom Trinh">Vinamilk Valuation | Tom Trinh</title>
-  <meta name="description" content="DCF valuation of Vinamilk (HOSE: VNM): base case VND 64,963 per share, 12.4% above the market price.">
+  <meta name="description" content="DCF and trading comps valuation of Vinamilk (HOSE: VNM): DCF VND 64,963 per share (+12%), trading comps VND 68,710–74,353 (+19–29%) vs a market price of VND 57,800.">
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
@@ -28,11 +28,11 @@
 
   <main class="wrap">
     <h1>
-      <span class="en">Vinamilk (HOSE: VNM): DCF Valuation</span>
-      <span class="vi">Vinamilk (HOSE: VNM): Định giá DCF</span>
+      <span class="en">Vinamilk (HOSE: VNM): DCF + Trading Comps Valuation</span>
+      <span class="vi">Vinamilk (HOSE: VNM): Định giá DCF + so sánh doanh nghiệp cùng ngành</span>
     </h1>
-    <p class="lead en">Is Vinamilk fairly priced? A five-year unlevered free cash flow DCF in Excel, using Vietnamese Accounting Standards (VAS) data, a 30 June 2026 balance sheet and market data at the 16 October 2026 close. Personal project, October 2026.</p>
-    <p class="lead vi">Vinamilk có đang được định giá hợp lý không? Mô hình DCF dòng tiền tự do không vay nợ 5 năm trên Excel, sử dụng dữ liệu theo Chuẩn mực Kế toán Việt Nam (VAS), bảng cân đối tại 30/06/2026 và dữ liệu thị trường ngày 16/10/2026. Dự án cá nhân, tháng 10/2026.</p>
+    <p class="lead en">Is Vinamilk fairly priced? Valued two ways in Excel: a five-year unlevered free cash flow DCF using Vietnamese Accounting Standards (VAS) data, and trading comparables against four regional dairy peers. Balance sheet at 30 June 2026, market data at the 16 October 2026 close. Personal project, October 2026.</p>
+    <p class="lead vi">Vinamilk có đang được định giá hợp lý không? Định giá bằng hai phương pháp trên Excel: mô hình DCF dòng tiền tự do không vay nợ 5 năm theo Chuẩn mực Kế toán Việt Nam (VAS) và so sánh doanh nghiệp cùng ngành với bốn công ty sữa trong khu vực. Bảng cân đối tại 30/06/2026, dữ liệu thị trường ngày 16/10/2026. Dự án cá nhân, tháng 10/2026.</p>
     <p>
       <a class="btn en" href="files/vinamilk-1-page-report-en.pdf">1-Page Report (PDF)</a>
       <a class="btn en" href="files/vinamilk-dcf-model-en.pdf">DCF Model (PDF)</a>
@@ -43,19 +43,19 @@
     <!-- ========== HEADLINE ========== -->
     <h2><span class="en">Headline result</span><span class="vi">Kết quả chính</span></h2>
     <div class="stats en">
-      <div class="stat"><div class="label">Value per share (base case)</div><div class="value">VND 64,963</div></div>
+      <div class="stat"><div class="label">DCF value per share (base case)</div><div class="value">VND 64,963</div></div>
+      <div class="stat"><div class="label">Trading comps (25th–75th pct)</div><div class="value">VND 68,710–74,353</div></div>
       <div class="stat"><div class="label">Market price, 16 Oct 2026</div><div class="value">VND 57,800</div></div>
-      <div class="stat"><div class="label">Upside to market</div><div class="value">+12.4%</div></div>
-      <div class="stat"><div class="label">WACC / terminal growth</div><div class="value">9.55% / 3.0%</div></div>
+      <div class="stat"><div class="label">Upside: DCF / comps</div><div class="value">+12% / +19–29%</div></div>
     </div>
     <div class="stats vi">
-      <div class="stat"><div class="label">Giá trị mỗi cổ phiếu (kịch bản cơ sở)</div><div class="value">VND 64.963</div></div>
+      <div class="stat"><div class="label">Giá trị DCF mỗi cổ phiếu (kịch bản cơ sở)</div><div class="value">VND 64.963</div></div>
+      <div class="stat"><div class="label">So sánh cùng ngành (phân vị 25–75)</div><div class="value">VND 68.710–74.353</div></div>
       <div class="stat"><div class="label">Giá thị trường, 16/10/2026</div><div class="value">VND 57.800</div></div>
-      <div class="stat"><div class="label">Tiềm năng tăng so với giá thị trường</div><div class="value">+12,4%</div></div>
-      <div class="stat"><div class="label">WACC / tăng trưởng dài hạn</div><div class="value">9,55% / 3,0%</div></div>
+      <div class="stat"><div class="label">Tiềm năng tăng: DCF / so sánh</div><div class="value">+12% / +19–29%</div></div>
     </div>
-    <p class="en"><strong>Conclusion.</strong> In the base case, VNM is worth about VND 64,963 per share, 12.4% above the market price. Across the sensitivity grid (WACC 8.55–10.55%, terminal growth 2.0–4.0%), value ranges from VND 52,876 to 87,563. The market price sits near the bottom of that range, which points to moderate undervaluation. The model implies a 2026E EV/EBITDA of 8.0x, against about 7.0x at the current price. About 75% of enterprise value comes from the terminal value, so the result depends most on long-run margin, terminal growth and WACC.</p>
-    <p class="vi"><strong>Kết luận.</strong> Theo kịch bản cơ sở, VNM có giá trị khoảng 64.963 VND/cổ phiếu, cao hơn giá thị trường 12,4%. Trên lưới độ nhạy (WACC 8,55–10,55%, tăng trưởng dài hạn 2,0–4,0%), giá trị dao động từ 52.876 đến 87.563 VND; giá thị trường nằm gần cận dưới của khoảng này, cho thấy cổ phiếu bị định giá thấp ở mức vừa phải. Mô hình ngụ ý EV/EBITDA 2026E là 8,0x, so với khoảng 7,0x theo giá hiện tại. Khoảng 75% giá trị doanh nghiệp đến từ giá trị cuối kỳ, nên kết quả phụ thuộc nhiều nhất vào biên lợi nhuận dài hạn, tốc độ tăng trưởng và WACC.</p>
+    <p class="en"><strong>Conclusion.</strong> Both methods point to undervaluation. The base-case DCF gives about VND 64,963 per share, 12% above the market price, and blended trading comps give VND 68,710–74,353, 19–29% above it. Across the DCF sensitivity grid (WACC 8.55–10.55%, terminal growth 2.0–4.0%), value ranges from VND 52,876 to 87,563, and the market price sits near the bottom of that range. VNM trades at an 18% EV/EBITDA discount to its peers despite a 7-point higher EBITDA margin. Part of that gap is likely structural (frontier-market status, foreign-ownership limits), so not all of it is upside. About 75% of the DCF's enterprise value comes from the terminal value, so that result depends most on long-run margin, terminal growth and WACC.</p>
+    <p class="vi"><strong>Kết luận.</strong> Cả hai phương pháp đều cho thấy cổ phiếu bị định giá thấp. DCF kịch bản cơ sở cho khoảng 64.963 VND/cổ phiếu, cao hơn giá thị trường 12%; so sánh cùng ngành (kết hợp) cho 68.710–74.353 VND, cao hơn 19–29%. Trên lưới độ nhạy DCF (WACC 8,55–10,55%, tăng trưởng dài hạn 2,0–4,0%), giá trị dao động từ 52.876 đến 87.563 VND và giá thị trường nằm gần cận dưới. VNM giao dịch với EV/EBITDA thấp hơn 18% so với nhóm cùng ngành dù biên EBITDA cao hơn 7 điểm phần trăm. Một phần chênh lệch này nhiều khả năng mang tính cấu trúc (thị trường cận biên, giới hạn sở hữu nước ngoài), nên không phải toàn bộ là dư địa tăng giá. Khoảng 75% giá trị doanh nghiệp theo DCF đến từ giá trị cuối kỳ, nên kết quả này phụ thuộc nhiều nhất vào biên lợi nhuận dài hạn, tốc độ tăng trưởng và WACC.</p>
 
     <!-- ========== FORECAST ========== -->
     <h2><span class="en">Forecast summary</span><span class="vi">Tóm tắt dự phóng</span></h2>
@@ -160,6 +160,67 @@
       <p class="note">Xanh = bằng hoặc cao hơn giá thị trường 57.800 VND; đỏ = thấp hơn. Kịch bản cơ sở được đóng khung.</p>
     </div>
 
+    <!-- ========== TRADING COMPS ========== -->
+    <h2><span class="en">Trading comparables</span><span class="vi">So sánh doanh nghiệp cùng ngành</span></h2>
+
+    <div class="en">
+      <p>VNM is the only large listed dairy company in Vietnam, so the peer set is four listed regional dairy companies on FY2025A financials and 16 October 2026 prices. Peer multiples use the 25th–75th percentile so that a single outlier cannot stretch the range.</p>
+      <div class="scroll">
+      <table class="num">
+        <tr><th class="left">Company</th><th>EV/EBITDA</th><th>P/E</th><th>EBITDA margin</th><th>Revenue growth</th></tr>
+        <tr><td class="left">Yili (China)</td><td>12.7x</td><td>15.4x</td><td>14.1%</td><td>0.1%</td></tr>
+        <tr><td class="left">Mengniu (China)</td><td>9.1x</td><td>n.m.</td><td>9.8%</td><td>−7.3%</td></tr>
+        <tr><td class="left">Ultrajaya (Indonesia)</td><td>10.0x</td><td>15.4x</td><td>21.1%</td><td>−1.2%</td></tr>
+        <tr><td class="left">Dutch Lady (Malaysia)</td><td>10.0x</td><td>17.9x</td><td>12.1%</td><td>3.8%</td></tr>
+        <tr><td class="left"><strong>Peer median</strong></td><td><strong>10.0x</strong></td><td><strong>15.4x</strong></td><td><strong>13.1%</strong></td><td><strong>−0.6%</strong></td></tr>
+        <tr><td class="left"><strong>VNM at market</strong></td><td><strong>8.2x</strong></td><td><strong>12.8x</strong></td><td><strong>20.5%</strong></td><td><strong>3.0%</strong></td></tr>
+        <tr><td class="left">VNM vs. median</td><td>−18%</td><td>−17%</td><td>+7.4 pts</td><td>+3.6 pts</td></tr>
+      </table>
+      </div>
+      <p class="note">n.m. = not meaningful. Mengniu's earnings were depressed by impairments and associate losses. Nestlé (Malaysia) is excluded from the statistics: its structural premium (majority-owned by Nestlé S.A., small free float) gives 21.6x EV/EBITDA and 40.8x P/E versus 9–13x and 15–18x for the dairy peers.</p>
+
+      <h3>Implied value per share (VND)</h3>
+      <div class="scroll">
+      <table class="num">
+        <tr><th class="left">Method</th><th>25th pct</th><th>Median</th><th>75th pct</th></tr>
+        <tr><td class="left">EV/EBITDA</td><td>67,932</td><td>69,355</td><td>73,593</td></tr>
+        <tr><td class="left">P/E</td><td>69,489</td><td>69,537</td><td>75,113</td></tr>
+        <tr><td class="left">EV/Revenue (not weighted)</td><td>41,320</td><td>52,635</td><td>63,963</td></tr>
+        <tr><td class="left"><strong>Blended (50% EV/EBITDA, 50% P/E)</strong></td><td><strong>68,710</strong></td><td><strong>69,446</strong></td><td><strong>74,353</strong></td></tr>
+      </table>
+      </div>
+      <p class="note">EV/Revenue is shown for reference but not weighted: VNM's margins are well above its peers', so a revenue multiple understates it. VNM holds net cash, which is added back to the EV-based values. The DCF range (VND 58,127–74,239, from the sensitivity grid) and the blended comps range overlap at VND 68,710–74,239, which is 19–28% above the current price.</p>
+    </div>
+
+    <div class="vi">
+      <p>VNM là công ty sữa niêm yết lớn duy nhất tại Việt Nam, nên nhóm so sánh gồm bốn công ty sữa niêm yết trong khu vực, dựa trên số liệu FY2025A và giá ngày 16/10/2026. Hệ số của nhóm cùng ngành dùng khoảng phân vị 25–75 để một giá trị ngoại lệ không làm giãn khoảng giá trị.</p>
+      <div class="scroll">
+      <table class="num">
+        <tr><th class="left">Công ty</th><th>EV/EBITDA</th><th>P/E</th><th>Biên EBITDA</th><th>Tăng trưởng doanh thu</th></tr>
+        <tr><td class="left">Yili (Trung Quốc)</td><td>12,7x</td><td>15,4x</td><td>14,1%</td><td>0,1%</td></tr>
+        <tr><td class="left">Mengniu (Trung Quốc)</td><td>9,1x</td><td>n.m.</td><td>9,8%</td><td>−7,3%</td></tr>
+        <tr><td class="left">Ultrajaya (Indonesia)</td><td>10,0x</td><td>15,4x</td><td>21,1%</td><td>−1,2%</td></tr>
+        <tr><td class="left">Dutch Lady (Malaysia)</td><td>10,0x</td><td>17,9x</td><td>12,1%</td><td>3,8%</td></tr>
+        <tr><td class="left"><strong>Trung vị nhóm</strong></td><td><strong>10,0x</strong></td><td><strong>15,4x</strong></td><td><strong>13,1%</strong></td><td><strong>−0,6%</strong></td></tr>
+        <tr><td class="left"><strong>VNM theo giá thị trường</strong></td><td><strong>8,2x</strong></td><td><strong>12,8x</strong></td><td><strong>20,5%</strong></td><td><strong>3,0%</strong></td></tr>
+        <tr><td class="left">VNM so với trung vị</td><td>−18%</td><td>−17%</td><td>+7,4 điểm %</td><td>+3,6 điểm %</td></tr>
+      </table>
+      </div>
+      <p class="note">n.m. = không có ý nghĩa. Lợi nhuận của Mengniu bị kéo thấp bởi chi phí suy giảm giá trị và lỗ từ công ty liên kết. Nestlé (Malaysia) không nằm trong thống kê: mức phụ trội mang tính cấu trúc (Nestlé S.A. sở hữu đa số, tỷ lệ cổ phiếu tự do chuyển nhượng nhỏ) cho EV/EBITDA 21,6x và P/E 40,8x, so với 9–13x và 15–18x của các công ty sữa.</p>
+
+      <h3>Giá trị ngụ ý mỗi cổ phiếu (VND)</h3>
+      <div class="scroll">
+      <table class="num">
+        <tr><th class="left">Phương pháp</th><th>Phân vị 25</th><th>Trung vị</th><th>Phân vị 75</th></tr>
+        <tr><td class="left">EV/EBITDA</td><td>67.932</td><td>69.355</td><td>73.593</td></tr>
+        <tr><td class="left">P/E</td><td>69.489</td><td>69.537</td><td>75.113</td></tr>
+        <tr><td class="left">EV/Doanh thu (không đưa vào tỷ trọng)</td><td>41.320</td><td>52.635</td><td>63.963</td></tr>
+        <tr><td class="left"><strong>Kết hợp (50% EV/EBITDA, 50% P/E)</strong></td><td><strong>68.710</strong></td><td><strong>69.446</strong></td><td><strong>74.353</strong></td></tr>
+      </table>
+      </div>
+      <p class="note">EV/Doanh thu chỉ để tham khảo, không đưa vào tỷ trọng: biên lợi nhuận của VNM cao hơn nhiều so với nhóm cùng ngành nên hệ số doanh thu đánh giá thấp VNM. VNM có tiền ròng dương, được cộng lại vào các giá trị theo EV. Khoảng giá trị DCF (58.127–74.239 VND, lấy từ lưới độ nhạy) và khoảng so sánh kết hợp giao nhau ở 68.710–74.239 VND, cao hơn giá hiện tại 19–28%.</p>
+    </div>
+
     <!-- ========== ASSUMPTIONS ========== -->
     <h2><span class="en">Key assumptions</span><span class="vi">Giả định chính</span></h2>
 
@@ -185,19 +246,21 @@
       <li><strong>Cost of equity is a judgement call.</strong> Using the local-currency bond yield plus the full country risk premium partly double-counts sovereign risk. A treatment consistent with Damodaran's method gives a WACC near 7% and a much higher value.</li>
       <li><strong>Beta is uncertain.</strong> Raw beta is 0.50 (another source shows 0.34). A beta of 0.50 would give a WACC of about 8.3%; a beta of 0.80 would push it to about 10.5%.</li>
       <li><strong>Terminal value is about 75% of EV,</strong> so a lower long-run margin would cut the upside. The forecasts are my own estimates, not company guidance, and 2026E revenue and margin both sit above management's target and the VNDirect forecast.</li>
+      <li><strong>The peer set is small and imperfect.</strong> Only four regional peers, with three usable P/Es, and none is a Vietnamese company. Part of VNM's discount likely reflects frontier-market status and foreign-ownership limits. Dutch Lady's D&amp;A may be understated, which would lower its EV/EBITDA.</li>
       <li><strong>Simplifications.</strong> Non-controlling interests are at book value; VND 21,968bn of bank deposits is treated as fully liquid; the share count comes from one market-data site, and treasury shares were not checked against the filing.</li>
     </ul>
     <ul class="vi">
       <li><strong>Chi phí vốn chủ sở hữu là một nhận định chủ quan.</strong> Dùng lợi suất trái phiếu nội tệ cộng toàn bộ phần bù rủi ro quốc gia là tính trùng một phần rủi ro chủ quyền. Cách xử lý nhất quán với phương pháp của Damodaran cho WACC gần 7% và giá trị cao hơn nhiều.</li>
       <li><strong>Beta chưa chắc chắn.</strong> Beta thô là 0,50 (một nguồn khác cho 0,34). Beta 0,50 cho WACC khoảng 8,3%; beta 0,80 đẩy WACC lên khoảng 10,5%.</li>
       <li><strong>Giá trị cuối kỳ chiếm khoảng 75% EV,</strong> nên biên lợi nhuận dài hạn thấp hơn sẽ làm giảm tiềm năng tăng. Dự phóng là ước tính của tôi, không phải định hướng của công ty; doanh thu và biên 2026E đều cao hơn mục tiêu của ban lãnh đạo và dự báo của VNDirect.</li>
+      <li><strong>Nhóm so sánh nhỏ và chưa hoàn hảo.</strong> Chỉ có bốn công ty trong khu vực, trong đó ba công ty có P/E dùng được, và không có công ty Việt Nam nào. Một phần mức chiết khấu của VNM nhiều khả năng phản ánh thị trường cận biên và giới hạn sở hữu nước ngoài. Khấu hao (D&amp;A) của Dutch Lady có thể bị ghi thấp, khiến EV/EBITDA của công ty này bị đánh giá cao hơn thực tế.</li>
       <li><strong>Đơn giản hóa.</strong> Lợi ích cổ đông không kiểm soát tính theo giá trị sổ sách; tiền gửi ngân hàng (21.968 tỷ VND) coi là thanh khoản hoàn toàn; số cổ phiếu lấy từ một trang dữ liệu thị trường, chưa đối chiếu cổ phiếu quỹ với báo cáo.</li>
     </ul>
 
     <!-- ========== SOURCES ========== -->
     <h2><span class="en">Sources</span><span class="vi">Nguồn</span></h2>
-    <p class="note en">Vinamilk audited financial statements FY2021–25 and Q2/H1 2026 interim financial statements (KPMG-reviewed); Vietstock (price, share count); Trading Economics (bond yield); Damodaran, Jan 2026 (country risk premium); VNDirect (Mar 2026) and the company's 2026 targets (cross-checks). The full source list and all assumptions are documented in the underlying Excel model. Educational project; not investment advice.</p>
-    <p class="note vi">Báo cáo tài chính kiểm toán FY2021–25 và báo cáo tài chính giữa niên độ Q2/H1 2026 (đã được KPMG soát xét) của Vinamilk; Vietstock (giá, số cổ phiếu); Trading Economics (lợi suất trái phiếu); Damodaran, 1/2026 (phần bù rủi ro quốc gia); VNDirect (3/2026) và mục tiêu 2026 của công ty (đối chiếu). Danh sách đầy đủ và toàn bộ giả định được ghi trong file mô hình Excel gốc. Dự án học tập; không phải khuyến nghị đầu tư.</p>
+    <p class="note en">Vinamilk audited financial statements FY2021–25 and Q2/H1 2026 interim financial statements (KPMG-reviewed); Vietstock (price, share count); Trading Economics (bond yield); Damodaran, Jan 2026 (country risk premium); VNDirect (Mar 2026) and the company's 2026 targets (cross-checks); peer filings, Yahoo Finance, StockAnalysis, Investing.com and Simply Wall St (trading comps). The full source list and all assumptions are documented in the underlying Excel model. Educational project; not investment advice.</p>
+    <p class="note vi">Báo cáo tài chính kiểm toán FY2021–25 và báo cáo tài chính giữa niên độ Q2/H1 2026 (đã được KPMG soát xét) của Vinamilk; Vietstock (giá, số cổ phiếu); Trading Economics (lợi suất trái phiếu); Damodaran, 1/2026 (phần bù rủi ro quốc gia); VNDirect (3/2026) và mục tiêu 2026 của công ty (đối chiếu); báo cáo của các công ty cùng ngành, Yahoo Finance, StockAnalysis, Investing.com và Simply Wall St (so sánh cùng ngành). Danh sách đầy đủ và toàn bộ giả định được ghi trong file mô hình Excel gốc. Dự án học tập; không phải khuyến nghị đầu tư.</p>
 
     <p style="margin-top:32px">
       <a class="en" href="index.html">← Back to all projects</a>
